@@ -1,0 +1,10 @@
+sudo: reqiured
+services:
+  - docker
+
+before_install:
+  - docker build -t omare23/docker-react-vite -f Dockerfile.dev . 
+
+#This is to run our test suite
+script:
+  - docker run -e CI=true omare23/docker-react-vite npm run test 
