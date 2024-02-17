@@ -8,3 +8,15 @@ before_install:
 #This is to run our test suite
 script:
   - docker run -e CI=true omare23/docker-react-vite npm run test 
+
+deploy: 
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "Front-end"
+  env: "Front-end-env"
+  bucket_name: "elasticbeanstalk-us-east-2-226477727124"
+  bucket_path: "Front-end"
+  on:
+    branch: main
+ 
+
