@@ -16,10 +16,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>This is now my test application</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          Hee nigeri aaaaa This is a testa {count}
+
         </button>
         <p>
         </p>
